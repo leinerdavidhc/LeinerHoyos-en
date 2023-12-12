@@ -1,0 +1,86 @@
+---
+import { className } from "@/components/Button";
+---
+
+<section class="flex flex-col justify-center items-center gap-5 p-2 mt-10">
+  <article
+    class="flex justify-center items-center md:flex-row flex-col md:gap-20 gap-10 w-full p-2"
+  >
+    <div
+      class="md:w-[60%] w-full border-2 border-primary rounded-md overflow-hidden md:order-1 order-2"
+    >
+      <header
+        class="w-full flex justify-start items-center flex-row gap-2 bg-primary p-2"
+      >
+        <div class="bg-red-600 w-5 h-5 rounded-full"></div>
+        <div class="bg-yellow-400 w-5 h-5 rounded-full"></div>
+        <div class="bg-green-500 w-5 h-5 rounded-full"></div>
+      </header>
+      <article class="p-3 bg-background flex flex-col gap-8">
+        <h3 class="text-primary font-semibold font-Oswal text-3xl">Sobre Mí</h3>
+        <p class="text-base font-Poppins text-justify">
+          ¡Hola!👋 Soy <strong
+            class="text-secondary tracking-wider font-semibold text-lg"
+            >Leiner Hoyos</strong
+          >, un desarrollador web junior de Colombia, con 21 años y 3 años de
+          experiencia en el desarrollo web. Estudio ingeniería de sistemas y me
+          especializo en el <span class="text-green-400">Stack MERN</span>,
+          aunque tengo conocimientos en diversas tecnologías tanto frontend como
+          backend.
+        </p>
+        <p class="text-base font-Poppins text-justify">
+          <strong class="font-semibold">Mi objetivo</strong>🏅 es empoderar a
+          las personas para alcanzar sus sueños a través del desarrollo web.
+        </p>
+        <p>
+          Me considero 💻 <strong class="font-semibold">trabajador</strong>, <strong
+            class="font-semibold"
+            >simpático y disfruto trabajando en equipo🎆.</strong
+          >ñ Tengo habilidades para <strong class="font-semibold"
+            >resolver problemas</strong
+          > y soy <strong class="font-semibold">autodidacta.</strong>
+        </p>
+        <p class="text-base font-Poppins text-justify">
+          Además de mi pasión por la programación,<strong class="font-semibold">
+            Me gusta hacer deporte🏈</strong
+          > Disfruto especialmente de los deportes que involucran correr🏃 y
+          mantenerme activo.
+        </p>
+      </article>
+      <div class="w-full m-3 flex items-center justify-center">
+        <footer class="bg-primary rounded-md">
+          <button class:list={[className]} id="descargarBtn"
+            >Descargar CV</button
+          >
+        </footer>
+      </div>
+    </div>
+    <div
+      class="lg:w-72 lg:h-72 md:h-64 md:w-64 w-56 h-56 rounded-full flex items-center justify-center overflow-hidden border-2 border-primary md:order-2 order-1"
+    >
+      <img
+        src="/leinerhc.png"
+        alt="leiner hoyos"
+        class="w-full object-cover h-auto"
+      />
+    </div>
+  </article>
+</section>
+
+<script>
+  const buttonDescarga = document.getElementById("descargarBtn") as HTMLElement;
+  buttonDescarga.addEventListener("click", function () {
+    var urlPdf = "/HOJA DE VIDA LEINER DAVID HOYOS CABRERA 1.pdf";
+
+    var nombreArchivo = "HOJA DE VIDA LEINER DAVID HOYOS CABRERA.pdf";
+
+    var linkDescarga = document.createElement("a");
+    linkDescarga.href = urlPdf;
+    linkDescarga.download = nombreArchivo;
+
+    document.body.appendChild(linkDescarga);
+    linkDescarga.click();
+
+    document.body.removeChild(linkDescarga);
+  });
+</script>
