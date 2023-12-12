@@ -34,6 +34,10 @@
   body {
     @apply bg-background text-primary;
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
 }
 
 #main{

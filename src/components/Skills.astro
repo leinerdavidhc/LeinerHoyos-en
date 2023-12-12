@@ -1,0 +1,100 @@
+---
+type Skill = {
+    name: string;
+    icon: string;
+    link: string;
+}
+import SkillContainer from "@/components/SkillContainer"
+const skills:Skill[]=[
+  {
+    name: "Html",
+    icon: "/html.png",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+  },
+  {
+    name: "Css",
+    icon: "/css.png",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/css",
+  },
+  {
+    name: "JavaScript",
+    icon: "/javascript.png",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/javascript",
+  },
+  {
+    name: "Typescript",
+    icon: "/Typescript.png",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "React",
+    icon: "/React.png",
+    link: "https://react.dev/",
+  },
+  {
+    name: "Nextjs",
+    icon: "/Nextjs.png",
+    link: "https://nextjs.org/",
+  },
+  {
+    name: "Angular",
+    icon: "/Angular.png",
+    link: "https://angular.dev/",
+  },
+  {
+    name: "Astro",
+    icon: "/astro.png",
+    link: "https://astro.build/",
+  },
+  {
+    name: "Tailwindcss",
+    icon: "/tailwindcss.png",
+    link: "https://tailwindcss.com/",
+  },
+  {
+    name: "Nodejs",
+    icon: "/nodejs.png",
+    link: "https://nodejs.org/en",
+  },
+  {
+    name: "Express",
+    icon: "/express.png",
+    link: "https://expressjs.com/es/",
+  },
+  {
+    name: "Mongodb",
+    icon: "/mongodb.png",
+    link: "https://www.mongodb.com/es",
+  },
+  {
+    name: "Mysql",
+    icon: "/mysql.png",
+    link: "https://www.mysql.com/",
+  },
+  {
+    name: "Mariadb",
+    icon: "/mariadb.png",
+    link: "https://mariadb.com/",
+  },
+  {
+    name: "Java",
+    icon: "/java.png",
+    link: "https://www.java.com/es/",
+  },
+  {
+    name: "Python",
+    icon: "/python.png",
+    link: "https://www.python.org/",
+  },
+  {
+    name: "Git",
+    icon: "/git.png",
+    link: "https://git-scm.com/",
+  },
+];
+---
+
+<section class="flex flex-col justify-center items-center mt-10 gap-10">
+    <h2 class="md:text-5xl sm:text-4xl text-3xl font-semibold font-Oswal">Tecnologías que uso</h2>
+    <SkillContainer Skills={skills} client:load/>
+</section>

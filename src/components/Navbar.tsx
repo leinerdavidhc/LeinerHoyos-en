@@ -11,7 +11,7 @@ function Navbar() {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <header className="sticky left-0 top-0 w-full z-50 headerNav">
+    <header className="sticky left-0 top-0 w-full z-50 headerNav px-2">
       <nav className="flex items-center justify-between p-1">
         <div className="flex justify-between items-center w-full">
           <LOGO/>
