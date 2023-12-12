@@ -1,54 +1,24 @@
-# Astro Starter Kit: Basics
+# ¡Hola! Soy Leiner Hoyos 👋
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Bienvenido/a a mi perfil de desarrollador!
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Sobre mí
+Soy un apasionado desarrollador web junior de Colombia, con 21 años y una pasión inquebrantable por la ingeniería de sistemas y el mundo del desarrollo web. Con 3 años de experiencia en este emocionante campo, me he especializado en el stack MERN mientras exploraba diversas tecnologías tanto en el frontend como en el backend.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Objetivo
+Mi objetivo principal es utilizar mis habilidades en el desarrollo web para empoderar a las personas y ayudarlas a alcanzar sus sueños. Creo en la importancia del trabajo en equipo, la resolución creativa de problemas y el aprendizaje continuo.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Habilidades destacadas
+- Desarrollo web: HTML, CSS, JavaScript, TypeScript
+- Frameworks: React, Angular, Next.js
+- Backend: Node.js, Express, MongoDB, MySQL
+- Proactivo y autodidacta
 
-## 🚀 Project Structure
+## Más sobre mí
+Además de mi pasión por la programación, soy un entusiasta del deporte, especialmente de aquellos que involucran correr y mantenerme activo. Creo firmemente en un equilibrio entre mente sana y cuerpo sano.
 
-Inside of your Astro project, you'll see the following folders and files:
+## ¡Conéctate conmigo!
+¡Estoy emocionado por seguir creciendo en este viaje como desarrollador web! Si quieres hablar sobre desarrollo, colaborar en proyectos o simplemente charlar sobre tecnología y deportes, no dudes en contactarme.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+¡Gracias por visitar mi perfil! 🚀
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
