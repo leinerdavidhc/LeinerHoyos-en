@@ -12,8 +12,8 @@ function Navbar() {
   let [open, setOpen] = useState(false);
   return (
     <header className="sticky left-0 top-0 w-full z-50 headerNav">
-      <nav className="flex items-center justify-between p-4">
-        <div className="flex justify-between items-center w-full p-2">
+      <nav className="flex items-center justify-between p-1">
+        <div className="flex justify-between items-center w-full">
           <LOGO/>
           <button
             onClick={() => setOpen(!open)}
@@ -25,7 +25,7 @@ function Navbar() {
 
         <div
           className={`flex flex-col md:flex-row md:items-center absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in md:bg-transparent bg-primary ${
-            open ? "top-20 p-4 gap-6" : "top-[-490px]"
+            open ? "top-14 p-4 gap-6" : "top-[-490px]"
           }`}
         >
           <ul className="flex gap-4 md:flex-row flex-col">
