@@ -1,9 +1,4 @@
-type Skill = {
-    name: string;
-    icon: string;
-    link: string;
-}
-
+import {type Skill} from "@/types.d"
 
 export default function SkillContainer({Skills}:{Skills:Skill[]}) {
   return (
