@@ -58,4 +58,26 @@
   }
 }
 
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
 
+.timeline{
+  position: relative;
+  top:8px;
+  @apply bg-primary;
+  height:auto;
+  width: 1px;
+}
+
+.timeline::after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left:-8px;
+  width:16px;
+  height: 16px;
+  border-radius: 100%;
+  @apply bg-secondary;
+}

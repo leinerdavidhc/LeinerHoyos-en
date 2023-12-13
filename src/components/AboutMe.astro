@@ -2,60 +2,50 @@
 import { className } from "@/components/Button";
 ---
 
-<section class="flex flex-col justify-center items-center gap-5 p-2 mt-10" id="sobremi">
-  <article
-    class="flex justify-center items-center md:flex-row flex-col md:gap-20 gap-10 w-full p-2"
+<section class="mt-10 mx-4 flex flex-col justify-center items-center" id="sobremi">
+  <article class="w-full border-2 border-primary rounded-md overflow-hidden shadow-md shadow-gray-400 md:w-[80%]">
+    <header
+    class="w-full flex justify-start items-center flex-row gap-2 bg-primary p-2"
   >
+    <div class="bg-red-600 w-5 h-5 rounded-full"></div>
+    <div class="bg-yellow-400 w-5 h-5 rounded-full"></div>
+    <div class="bg-green-500 w-5 h-5 rounded-full"></div>
+  </header>
+  <div class="flex md:flex-row flex-col gap-4 justify-center items-center p-3">
+    <article class="p-2 bg-background flex flex-col gap-8 md:w-[60%] md:order-1 order-2">
+      <h3 class="text-primary font-semibold font-Oswal text-3xl">Sobre Mí</h3>
+      <p class="text-base font-Poppins text-justify">
+        ¡Hola!👋 Soy <strong
+          class="text-secondary tracking-wider font-semibold text-lg"
+          >Leiner Hoyos</strong
+        >, un desarrollador web junior de Colombia, con 21 años y 3 años de
+        experiencia en el desarrollo web. Estudio ingeniería de sistemas, tengo conocimientos en diversas tecnologías tanto frontend como
+        backend.
+      </p>
+      <p class="text-base font-Poppins text-justify">
+        <strong class="font-semibold">Mi objetivo</strong>🏅 es empoderar a
+        las personas para alcanzar sus sueños a través del desarrollo web.
+      </p>
+      <p class="text-base font-Poppins text-justify">
+        Me considero 💻 <strong class="font-semibold">trabajador</strong>, <strong
+          class="font-semibold"
+          >simpático y disfruto trabajando en equipo🎆.</strong>Tengo habilidades para <strong class="font-semibold">resolver problemas</strong> y soy <strong class="font-semibold">autodidacta.</strong>
+      </p>
+    </article>
+
     <div
-      class="md:w-[60%] w-full border-2 border-primary rounded-md overflow-hidden md:order-1 order-2 shadow-md shadow-gray-400"
-    >
-      <header
-        class="w-full flex justify-start items-center flex-row gap-2 bg-primary p-2"
-      >
-        <div class="bg-red-600 w-5 h-5 rounded-full"></div>
-        <div class="bg-yellow-400 w-5 h-5 rounded-full"></div>
-        <div class="bg-green-500 w-5 h-5 rounded-full"></div>
-      </header>
-      <article class="p-3 bg-background flex flex-col gap-8">
-        <h3 class="text-primary font-semibold font-Oswal text-3xl">Sobre Mí</h3>
-        <p class="text-base font-Poppins text-justify">
-          ¡Hola!👋 Soy <strong
-            class="text-secondary tracking-wider font-semibold text-lg"
-            >Leiner Hoyos</strong
-          >, un desarrollador web junior de Colombia, con 21 años y 3 años de
-          experiencia en el desarrollo web. Estudio ingeniería de sistemas, tengo conocimientos en diversas tecnologías tanto frontend como
-          backend.
-        </p>
-        <p class="text-base font-Poppins text-justify">
-          <strong class="font-semibold">Mi objetivo</strong>🏅 es empoderar a
-          las personas para alcanzar sus sueños a través del desarrollo web.
-        </p>
-        <p class="text-base font-Poppins text-justify">
-          Me considero 💻 <strong class="font-semibold">trabajador</strong>, <strong
-            class="font-semibold"
-            >simpático y disfruto trabajando en equipo🎆.</strong>Tengo habilidades para <strong class="font-semibold">resolver problemas</strong> y soy <strong class="font-semibold">autodidacta.</strong>
-        </p>
-      </article>
-      <div class="w-full m-3 flex items-center justify-center">
-        <footer class="bg-primary rounded-md">
-          <button class:list={[className]} id="descargarBtn"
-            >Descargar CV</button
-          >
-        </footer>
-      </div>
-    </div>
-    <div
-      class="lg:w-72 lg:h-72 md:h-64 md:w-64 w-56 h-56 rounded-full flex items-center justify-center overflow-hidden border-2 border-primary md:order-2 order-1 shadow-md shadow-gray-400"
-    >
-      <img
-        src="/leinerhc.png"
-        alt="leiner hoyos"
-        class="w-full object-cover h-auto"
-      />
-    </div>
+    class="lg:w-72 lg:h-72 md:h-64 md:w-64 w-56 h-56 rounded-full flex items-center justify-center overflow-hidden border-2 border-primary md:order-2 order-1 shadow-md shadow-gray-400"
+  >
+    <img
+      src="/leinerhc.png"
+      alt="leiner hoyos"
+      class="w-full object-cover h-auto"
+    />
+  </div>
+
+  </div>
   </article>
 </section>
-
 <script>
   const buttonDescarga = document.getElementById("descargarBtn") as HTMLElement;
   buttonDescarga.addEventListener("click", function () {

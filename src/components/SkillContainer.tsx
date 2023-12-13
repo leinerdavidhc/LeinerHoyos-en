@@ -7,7 +7,7 @@ type Skill = {
 
 export default function SkillContainer({Skills}:{Skills:Skill[]}) {
   return (
-    <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-10 gap-5 md:w-[70%] w-[80%]">
+    <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-10 gap-5 md:w-[70%] w-[80%] ">
       {
         Skills.map((skill,index) =>(
           <article key={index} className="bg-background hover:bg-primary border border-primary rounded-md shadow-md shadow-gray-400 flex flex-col items-center transition-all duration-300">
