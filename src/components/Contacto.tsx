@@ -1,144 +1,70 @@
+import { className } from "./Button";
 export default function Contacto() {
   return (
-    <section className="mt-10 flex items-center justify-center" id="contacto">
-      <div className="bg-bgOp flex md:flex-row flex-col gap-4 rounded-md shadow-md shadow-primary p-3 md:w-[60%]">
-        <article className="md:w-1/2 bg-secondary rounded-md p-3 flex flex-col gap-4">
-          <h1 className="text-3xl font-semibold font-Oswal text-center">
-            ¿TIENES UN PROYECTO? ESTOY DISPONIBLE VAMOS A HABLAR.
-          </h1>
-          <p className="text-base font-Poppins w-full text-justify">
-            Si tienes alguna duda o quieres contactarme, envíame un mensaje
-          </p>
-          <ul>
-            <li className="flex items-center justify-center w-max">
-              <a
-                href="https://www.facebook.com/leinerdavid.hoyoscabrera.10"
-                className="text-lg hover:text-background transition-all duration-300"
-                target="_blank"
-              >
-                <i className="bx bxl-facebook text-2xl"></i> Facebook
-              </a>
-            </li>
-            <li className="flex items-center justify-center w-max">
-              <a
-                href="https://github.com/leinerdavidhc"
-                className="text-lg hover:text-background transition-all duration-300"
-                target="_blank"
-              >
-                <i className="bx bxl-github text-2xl"></i> Github
-              </a>
-            </li>
-            <li className="flex items-center justify-center w-max">
-              <a
-                href="https://linkedin.com/in/leinerdavidhc/"
-                className="text-lg hover:text-background transition-all duration-300"
-                target="_blank"
-              >
-                <i className="bx bxl-linkedin-square text-2xl"></i> Linkedin
-              </a>
-            </li>
-            <li className="flex items-center justify-center w-max">
-              <a
-                href="mailto:leinerdavidhc20@gmail.com"
-                className="text-lg hover:text-background transition-all duration-300"
-                target="_blank"
-              >
-                <i className="bx bxs-envelope text-2xl"></i> Email
-              </a>
-            </li>
-            <li className="flex items-center justify-center w-max">
-              <a
-                href="https://wa.me/573114245409?text=Hola,%20quiero%20contactarte"
-                className="text-lg hover:text-background transition-all duration-300"
-                target="_blank"
-              >
-                <i className="bx bxl-whatsapp text-2xl"></i> Whatsapp
-              </a>
-            </li>
-            <li className="flex items-center justify-center w-max">
-              <a
-                href="https://www.instagram.com/leinerhoyos_/"
-                className="text-lg hover:text-background transition-all duration-300"
-                target="_blank"
-              >
-                <i className="bx bxl-instagram text-2xl"></i> Instagram
-              </a>
-            </li>
-          </ul>
-        </article>
-        <form action="" className="flex flex-col gap-3 md:w-1/2">
-        <div className="flex justify-between items-center bg-background w-full p-1 rounded-md border border-primary" id="iputdiv">
-            <div className="flex flex-col">
-              <label className="text-sm px-2" htmlFor="nombre">
-                Nombres
-              </label>
-              <input
-                type="text"
-                name="nombre"
-                className="bg-transparent text-sm px-2 placeholder:text-secondary text-secondary outline-none border-none group"
-                placeholder="Ingresa tu nombre"
-              />
-            </div>
-            <i className="bx bxs-user text-lg"></i>
-          </div>
-          <div className="flex justify-between items-center bg-background w-full p-1 rounded-md border border-primary">
-            <div className="flex flex-col">
-              <label className="text-sm px-2" htmlFor="email">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                className="bg-transparent text-sm px-2 placeholder:text-secondary text-secondary outline-none border-none"
-                placeholder="Ingresa tu email"
-              />
-            </div>
-            <span className="text-lg">@</span>
-          </div>
-          <div className="flex justify-between items-center bg-background w-full p-1 rounded-md border border-primary">
-            <div className="flex flex-col">
-              <label className="text-sm px-2" htmlFor="telefono">
-                Teléfono
-              </label>
-              <input
-                type="tel"
-                name="telefono"
-                className="bg-transparent text-sm px-2 placeholder:text-secondary text-secondary outline-none border-none"
-                placeholder="Ingresa tu teléfono"
-              />
-            </div>
-            <i className='bx bxs-phone'></i>
-          </div>
+    <section
+      className="mt-10 mx-4 flex flex-col justify-center items-center"
+      id="contacto"
+    >
+      <article className="w-full border-2 border-primary rounded-md overflow-hidden shadow-md shadow-gray-400 lg:w-[70%] md:w-[80%]">
+        <header className="w-full flex justify-start items-center flex-row gap-2 bg-primary p-2">
+          <div className="bg-red-600 w-5 h-5 rounded-full"></div>
+          <div className="bg-yellow-400 w-5 h-5 rounded-full"></div>
+          <div className="bg-green-500 w-5 h-5 rounded-full"></div>
+        </header>
+        <div className="flex md:flex-row flex-col gap-4 justify-center items-center p-3">
+          <article className="md:w-1/2 w-full flex flex-col gap-4">
+            <h3 className="text-4xl font-Oswal font-semibold text-secondary">
+              Contáctame
+            </h3>
+            <p className="text-2xl font-Poppins">
+              ¡No dudes en contactarme para cualquier consulta, oportunidad
+              laboral o colaboración!
+            </p>
+            <ul className="flex flex-col gap-2">
+              <li className="flex items-center justify-center w-max hover:text-secondary transition-all duration-300">
+                <a
+                  href="https://linkedin.com/in/leinerdavidhc/"
+                  className="flex justify-center items-center gap-1"
+                  target="_blank"
+                >
+                  <i className="bx bxl-linkedin-square text-2xl"></i>Leiner
+                  David Hoyos Cabrera
+                </a>
+              </li>
 
-          <div className="flex justify-between items-center bg-background w-full p-1 rounded-md border border-primary">
-            <div className="flex flex-col">
-              <label className="text-sm px-2" htmlFor="asunto">
-                Asunto
-              </label>
-              <input
-                type="text"
-                name="asunto"
-                className="bg-transparent text-sm px-2 placeholder:text-secondary text-secondary outline-none border-none"
-                placeholder="¿Sobre qué quieres hablar?"
-              />
+              <li className="flex items-center justify-center w-max hover:text-secondary transition-all duration-300">
+                <a
+                  href="https://wa.me/573114245409?text=Hola,%20quiero%20contactarte"
+                  className="flex justify-center items-center gap-1"
+                  target="_blank"
+                >
+                  <i className="bx bxl-whatsapp text-2xl"></i> +57 3114245409
+                </a>
+              </li>
+              <li className="flex items-center justify-center w-max hover:text-secondary transition-all duration-300">
+                <a href="mailto:leinerdavidhc20@gmail.com" className="flex justify-center items-center gap-1" target="_blank">
+                  <i className="bx bxs-envelope text-2xl"></i> Leinerdavidhc20@gmail.com
+                </a>
+              </li>
+            </ul>
+          </article>
+          <form className="flex flex-col gap-4 md:w-1/2 w-full p-3 items-center">
+            <div className="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
+              <input type="text" placeholder="Ingresa tu nombre" name="nombre" className="bg-background border border-primary rounded-md w-full p-2 outline-none focus:translate-x-[0.4em] focus:translate-y-[-0.4em] active:translate-x-[0.4em] active:translate-y-[-0.4em] placeholder-no-show transition-all duration-300 placeholder:text-secondary text-secondary"/>
             </div>
-            <i className='bx bx-question-mark'></i>
-          </div>
-          <div className="flex flex-col bg-background w-full p-1 rounded-md border border-primary">
-            <label className="text-sm px-2" htmlFor="mensaje">
-              Mensaje
-            </label>
-            <textarea
-              name="mensaje"
-              cols={30}
-              rows={10}
-              placeholder="Escribe tu mensaje"
-              className="resize-none bg-transparent text-sm px-2 placeholder:text-secondary text-secondary outline-none border-none"
-            ></textarea>
-          </div>
-          <button className="p-2 bg-secondary text-primary rounded-md hover:opacity-70 transition-all duration-300">Enviar Mensaje</button>
-        </form>
-      </div>
+            <div className="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
+              <input type="email" placeholder="Ingresa tu email" name="email" className="bg-background border border-primary rounded-md w-full p-2 outline-none focus:translate-x-[0.4em] focus:translate-y-[-0.4em] active:translate-x-[0.4em] active:translate-y-[-0.4em] placeholder-no-show transition-all duration-300 placeholder:text-secondary text-secondary"/>
+            </div>
+            <div className="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
+              <input type="text" placeholder="¿Sobre qué quieres hablar?" name="asunto" className="bg-background border border-primary rounded-md w-full p-2 outline-none focus:translate-x-[0.4em] focus:translate-y-[-0.4em] active:translate-x-[0.4em] active:translate-y-[-0.4em] placeholder-no-show transition-all duration-300 placeholder:text-secondary text-secondary"/>
+            </div>
+            <div className="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
+            <textarea placeholder="Escribe tu mensaje" name="mensaje" className="bg-background border border-primary rounded-md w-full p-2 outline-none focus:translate-x-[0.4em] focus:translate-y-[-0.4em] active:translate-x-[0.4em] active:translate-y-[-0.4em] placeholder-no-show transition-all duration-300 placeholder:text-secondary text-secondary" rows={10} cols={30}></textarea>
+            </div>
+            <button className={className}>Enviar Mensaje</button>
+          </form>
+        </div>
+      </article>
     </section>
   );
 }
