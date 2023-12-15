@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "3f2570a5-4c3a-43e2-b376-c76203f289fb",
     "title": "Rico Pollo",
     "description": "Sitio para comercializar Pollo de engorder, pagina para comunidades wayuú.",
     "img": "/Rico-pollo.png",
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": "b93b6a2e-9677-4b55-96e0-dae6fd8f2d1d",
     "title": "Pollo way",
     "description": "Pagina web de inversion social para comunidades wayuú, comecializacion de pollo de engorde.",
     "img": "/pollo-way.png",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": "c56d80c4-7322-4dc4-942c-54a306efda76",
     "title": "Wayuu Chicken",
     "description": "Sitio web desarrollado para la union de comunidades wayuú, mediante proyecto de inversión social comercializacion de pollos de engordes y artesanía wayuú.",
     "img": "/wayuu-chicken.png",
@@ -45,7 +45,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": "e9121de1-5c71-45d8-8829-5b8d4a1063fe",
     "title": "Clon api Rick and Morty",
     "description": "Clon de la api de rick y morty mas buscador de personajes.",
     "img": "/rickandmorty.png",
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": "f5365e4e-cb0e-4c12-b9f7-98e13b46e242",
     "title": "Leiner Hoyos Portafolio",
     "description": "Mi portafolio y pagina personal como desarollador full-stack.",
     "img": "/porfolio.png",
