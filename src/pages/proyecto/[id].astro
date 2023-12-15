@@ -5,7 +5,7 @@ import Footer from "../../components/Footer.astro"
 import Proyectos from "../../components/Proyectos"
 import Contacto from "../../components/Contacto.astro"
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:4321/ProyectosData.json");
+  const res = await fetch("https://leinerhoyos.netlify.app/ProyectosData.json");
   const data:ProyectosType[]= await res.json();
 
   return data.map(proyecto=>{

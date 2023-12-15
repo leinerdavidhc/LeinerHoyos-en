@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "title": "Rico Pollo",
+    "description": "Sitio para comercializar Pollo de engorder, pagina para comunidades wayuú.",
+    "img": "/Rico-pollo.png",
+    "repository": "https://github.com/leinerdavidhc/plumas-del-desierto",
+    "site": "https://www.rico-pollo.com/",
+    "stack": [
+      { "img": "/React.png", "name": "React" },
+      { "img": "/express.png", "name": "Express" },
+      { "img": "/nodejs.png", "name": "nodejs" },
+      { "img": "/mongodb.png", "name": "Mongodb" },
+      { "img": "/tailwindcss.png", "name": "Tailwindcss" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Pollo way",
+    "description": "Pagina web de inversion social para comunidades wayuú, comecializacion de pollo de engorde.",
+    "img": "/pollo-way.png",
+    "repository": "https://github.com/leinerdavidhc/Pollo-way",
+    "site": "https://www.polloway.com/",
+    "stack": [
+      { "img": "/React.png", "name": "React" },
+      { "img": "/express.png", "name": "Express" },
+      { "img": "/nodejs.png", "name": "nodejs" },
+      { "img": "/mongodb.png", "name": "Mongodb" },
+      { "img": "/tailwindcss.png", "name": "Tailwindcss" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Wayuu Chicken",
+    "description": "Sitio web desarrollado para la union de comunidades wayuú, mediante proyecto de inversión social comercializacion de pollos de engordes y artesanía wayuú.",
+    "img": "/wayuu-chicken.png",
+    "repository": "https://github.com/leinerdavidhc/Wayuu-chicken",
+    "site": "https://www.wayuuchicken.com/",
+    "stack": [
+      { "img": "/React.png", "name": "React" },
+      { "img": "/express.png", "name": "Express" },
+      { "img": "/nodejs.png", "name": "nodejs" },
+      { "img": "/mongodb.png", "name": "Mongodb" },
+      { "img": "/tailwindcss.png", "name": "Tailwindcss" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Clon api Rick and Morty",
+    "description": "Clon de la api de rick y morty mas buscador de personajes.",
+    "img": "/rickandmorty.png",
+    "repository": "https://github.com/leinerdavidhc/rickandmorty",
+    "site": "https://clone-api-rickandmorty.netlify.app/",
+    "stack": [
+      { "img": "/Angular.png", "name": "Angular" },
+      { "img": "/Typescript.png", "name": "TypeScript" },
+      { "img": "/tailwindcss.png", "name": "Tailwindcss" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Leiner Hoyos Portafolio",
+    "description": "Mi portafolio y pagina personal como desarollador full-stack.",
+    "img": "/porfolio.png",
+    "repository": "https://github.com/leinerdavidhc/LeinerHoyos",
+    "site": "https://leinerhoyos.netlify.app/",
+    "stack": [
+      { "img": "/React.png", "name": "React" },
+      { "img": "/Typescript.png", "name": "TypeScript" },
+      { "img": "/tailwindcss.png", "name": "Tailwindcss" },
+      { "img": "/astro.png", "name": "Astro" },
+      { "img": "/javascript.png", "name": "JavaScript" }
+    ]
+  }
+]
