@@ -40,13 +40,13 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setThemeState("theme-light")} className="flex gap-2 items-center">
-            <i className='bx bxs-sun text-base'></i> <span className="text-base">Claro</span>
+            <i className='bx bxs-sun text-base'></i> <span className="text-base">Light</span>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setThemeState("dark")} className="flex gap-2 items-center">
-            <i className='bx bxs-moon text-base'></i> <span className="text-base">Oscuro</span>
+            <i className='bx bxs-moon text-base'></i> <span className="text-base">Dark</span>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setThemeState("system")} className="flex gap-2 items-center">
-            <i className='bx bx-desktop text-base' ></i> <span className="text-base">Sistema</span>
+            <i className='bx bx-desktop text-base' ></i> <span className="text-base">System</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
