@@ -27,13 +27,13 @@ export function ModeLanguage() {
           className="flex gap-2 items-center"
         >
             <img src="/espana.png" alt="españa" className="w-[24px]"/>
-          <span className="text-base">ES</span>
+          <a className="text-base" href="https://leinerhoyos.netlify.app/">ES</a>
         </DropdownMenuItem>
         <DropdownMenuItem
           className="flex gap-2 items-center"
         >
         <img src="/estados-unidos.png" alt="españa" className="w-[24px]"/>
-          <span className="text-base">EN</span>
+          <a className="text-base" href="https://leinerhoyos-en.netlify.app/">EN</a>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
