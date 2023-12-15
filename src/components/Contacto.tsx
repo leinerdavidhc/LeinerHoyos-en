@@ -1,39 +1,5 @@
-import type React from "react";
 import { className } from "./Button";
 export default function Contacto() {
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-  
-    const myForm = event.currentTarget;
-    const formData = new FormData(myForm);
-  
-    // Convertir FormData a objeto compatible con URLSearchParams
-    const formDataObject: Record<string, string> = {};
-    formData.forEach((value, key) => {
-      formDataObject[key] = value as string;
-    });
-  
-    // Crear URLSearchParams a partir del objeto
-    const searchParams = new URLSearchParams(formDataObject);
-  
-    try {
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: searchParams.toString(),
-      });
-  
-      if (response.ok) {
-        alert("Thank you for your submission");
-      } else {
-        throw new Error("Submission failed");
-      }
-    } catch (error) {
-      alert(error);
-    }
-  };
-  
-  
   return (
     <section
       className="mt-10 mx-4 flex flex-col justify-center items-center"
@@ -88,8 +54,10 @@ export default function Contacto() {
             </ul>
           </article>
           <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
             className="flex flex-col gap-4 md:w-1/2 w-full p-3 items-center"
-            onSubmit={handleSubmit}
           >
             <div className="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
               <input
