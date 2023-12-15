@@ -9,7 +9,7 @@ export default function LOGO() {
               LHDEV
             </h2>
             <span className="text-secondary text-[0.25em] font-Poppins font-light"
-              >Desarrolador Web</span>
+              >Web developer</span>
           </div>
           <span className="text-[1em] text-secondary font-Poppins">{"}"}</span>
         </a>

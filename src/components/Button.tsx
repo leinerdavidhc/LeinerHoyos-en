@@ -2,9 +2,7 @@ export const className = `font-semibold text-2xl font-Montserrat bg-background p
 active:translate-y-[-0.18em] hover:bg-secondary transition-all duration-300 shadow-sm shadow-primary hover:text-background`;
 export function Button({ children }: { children: string }) {
   return (
-    <button
-      className={className}
-    >
+    <button className={className}>
       {children}
     </button>
   );

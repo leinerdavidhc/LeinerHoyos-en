@@ -6,7 +6,7 @@ export default function Proyectos() {
 
   useEffect(() => {
     const GetData = async () => {
-      const res = await axios.get("/ProyectosData.json");
+      const res = await axios.get("/ProyectosDataEn.json");
       setData(res.data);
     };
     GetData();
@@ -15,11 +15,10 @@ export default function Proyectos() {
     <section className="mt-10 flex flex-col gap-4 p-4 " id="proyectos">
       <header className="flex flex-col justify-center items-center w-full gap-3">
         <h2 className="text-4xl font-semibold font-Oswal text-secondary">
-          Mis Proyectos
+        My projects
         </h2>
         <p className="text-base font-Poppins">
-          Aqui encontrarás los proyectos que he desarrollado y que he
-          contibuido.
+        Here you will find the projects that I have developed and contributed to.
         </p>
       </header>
       <section className="grid  md:grid-cols-3 sm:grid-cols-2 grid-col-1 gap-5">

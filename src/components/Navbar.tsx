@@ -5,9 +5,9 @@ import LOGO from "./LOGO";
 
 function Navbar() {
   let Links = [
-    { name: "Sobre Mí", link: "/#sobremi" },
-    { name: "Proyectos", link: "/#proyectos" },
-    { name: "Contacto", link: "/#contacto" },
+    { name: "About me", link: "/#aboutme" },
+    { name: "Projects", link: "/#projects" },
+    { name: "Contact", link: "/#contact" },
   ];
   let [open, setOpen] = useState(false);
   return (
