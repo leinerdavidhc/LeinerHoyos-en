@@ -13,7 +13,7 @@ export default function Proyectos() {
   }, []);
   return (
     <section className="mt-10 flex flex-col gap-4 p-4" id="proyectos">
-      <header className="flex flex-col justify-center items-center w-full">
+      <header className="flex flex-col justify-center items-center w-full gap-3">
         <h2 className="text-4xl font-semibold font-Oswal text-secondary">
           Mis Proyectos
         </h2>

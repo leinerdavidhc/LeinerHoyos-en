@@ -1,0 +1,77 @@
+---
+import {type ProyectosType} from "../../types.d"
+import Layout from "../../layouts/Layout.astro"
+import Footer from "../../components/Footer.astro"
+import Proyectos from "../../components/Proyectos"
+import Contacto from "../../components/Contacto.astro"
+export async function getStaticPaths() {
+  const res = await fetch("http://localhost:4321/ProyectosData.json");
+  const data:ProyectosType[]= await res.json();
+
+  return data.map(proyecto=>{
+    return {
+        params:{id:proyecto.id},
+        props:{proyecto}
+    }
+  })
+}
+const {proyecto}=Astro.props;
+---
+<Layout title={`Leiner Hoyos | Proyecto ${proyecto.title}`}>
+    <section class="mt-10 mx-5">
+        <article class="relative rounded-md overflow-hidden h-[600px] bg-red-400">
+            <div class="absolute h-full w-full">
+                <img src={proyecto.img} alt={proyecto.title} class="w-full h-full object-cover">
+            </div>
+            <div class="backdrop-blur-md z-[1] absolute w-full bottom-0 left-0 p-5 flex flex-col justify-center gap-5 ">
+                <h1 class="w-max md:text-3xl text-2xl font-semibold">
+                    {proyecto.title}
+                </h1>
+                <div class="flex items-center justify-center gap-2 md:w-max">
+                    <a
+                    href="/"
+                    class="border border-secondary p-2 rounded-md hover:bg-secondary transition-all duration-300 flex items-center justify-center gap-2"
+                  >
+                   <i class='bx bx-left-arrow-alt text-2xl'></i>
+                   Volver
+                  </a>
+                    <a
+                      href={proyecto.repository}
+                      target="_blank"
+                      class="border border-secondary p-2 rounded-md hover:bg-secondary transition-all duration-300 flex items-center justify-center gap-2"
+                    >
+                      <i class="bx bxl-github text-3xl"></i>
+                      Ver en Github
+                    </a>
+                    <a
+                      href={proyecto.site}
+                      target="_blank"
+                      class="border border-secondary p-2 rounded-md hover:bg-secondary transition-all duration-300 flex items-center justify-center gap-2"
+                    >
+                      <i class="bx bx-world text-3xl "></i> Ver en la web
+                    </a>
+                  </div>
+            </div>
+        </article>
+        <article class="mt-5 flex flex-wrap gap-3 md:justify-start justify-center  items-center p-3">
+            {
+                proyecto.stack.map(tecnolgia=>(
+                    <div class="bg-background rounded-md border border-primary hover:bg-primary transition-all duration-300">
+                        <div class="flex items-center gap-3 p-3 rounded-md border border-primary w-full h-full translate-x-[-0.4em] translate-y-[-0.4em] bg-background">
+                            <img src={tecnolgia.img} alt={tecnolgia.name} class="w-[24px]">
+                            <span class="cursor-default">{tecnolgia.name}</span>
+                        </div>
+                    </div>
+                ))
+            }
+        </article>
+        <article class="flex flex-col gap-2 mt-5 p-3">
+            <h2 class="text-secondary md:text-4xl text-3xl font-semibold">{proyecto.title}</h2>
+            <p class="text-base font-Poppins text-justify">{proyecto.description}</p>
+        </article>
+    </section>
+    <Proyectos client:load/>
+    <Contacto/>
+    <Footer/>
+</Layout>
+
