@@ -1,5 +1,5 @@
 ---
-import { className } from "@/components/Button";
+import { class } from "@/components/Button";
 ---
 
 <section
@@ -67,29 +67,18 @@ import { className } from "@/components/Button";
         </ul>
       </article>
       <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-
-          <input type="tel" name="tel" />
-
-        <p>
-          <label
-            >Your Role: <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label
-          >
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit" class={className}>Send</button>
-        </p>
+        <div class="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
+          <input type="text" placeholder="Ingresa tu nombre" name="name" class="bg-background border border-primary rounded-md w-full p-2 outline-none focus:translate-x-[0.4em] focus:translate-y-[-0.4em] active:translate-x-[0.4em] active:translate-y-[-0.4em] placeholder-no-show transition-all duration-300 placeholder:text-secondary text-secondary"/>
+        </div>
+        <div class="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
+          <input type="email" placeholder="Ingresa tu email" name="email" class="bg-background border border-primary rounded-md w-full p-2 outline-none focus:translate-x-[0.4em] focus:translate-y-[-0.4em] active:translate-x-[0.4em] active:translate-y-[-0.4em] placeholder-no-show transition-all duration-300 placeholder:text-secondary text-secondary"/>
+        </div>
+        <div class="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
+          <input type="text" placeholder="¿Sobre qué quieres hablar?" name="affair" class="bg-background border border-primary rounded-md w-full p-2 outline-none focus:translate-x-[0.4em] focus:translate-y-[-0.4em] active:translate-x-[0.4em] active:translate-y-[-0.4em] placeholder-no-show transition-all duration-300 placeholder:text-secondary text-secondary"/>
+        </div>
+        <div class="bg-primary border border-primary rounded-md shadow-md shadow-primary lg:w-[90%] w-full">
+        <textarea placeholder="Escribe tu mensaje" name="message" class="bg-background border border-primary rounded-md w-full p-2 outline-none focus:translate-x-[0.4em] focus:translate-y-[-0.4em] active:translate-x-[0.4em] active:translate-y-[-0.4em] placeholder-no-show transition-all duration-300 placeholder:text-secondary text-secondary" rows={10} cols={30}></textarea>
+        </div>
       </form>
     </div>
   </article>
