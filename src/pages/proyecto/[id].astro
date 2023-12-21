@@ -17,9 +17,9 @@ export async function getStaticPaths() {
 }
 const {proyecto}=Astro.props;
 ---
-<Layout title={`Leiner Hoyos | Proyecto ${proyecto.title}`}>
+<Layout title="Leiner Hoyos - Full Stack Web Developer">
     <section class="mt-10 mx-5">
-        <article class="relative rounded-md overflow-hidden h-[600px] bg-red-400">
+        <article class="relative rounded-md overflow-hidden h-[600px]">
             <div class="absolute h-full w-full">
                 <img src={proyecto.img} alt={proyecto.title} class="w-full h-full object-cover">
             </div>
