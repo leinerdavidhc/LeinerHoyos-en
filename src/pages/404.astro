@@ -1,0 +1,86 @@
+---
+import "../styles/globals.css"
+import {className} from "../components/Button"
+---
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hello! I'm Leiner Hoyos, a passionate fullstack web developer from Colombia, aged 21, with 3 years of experience in web development. Specialized in the MERN stack and proficient in both frontend and backend. My goal is to blend aesthetics with functionality to create compelling and highly functional web experiences. Discover how my passion for web development can add value to your next project!">
+        <meta name="keywords" content="Web developer, Fullstack, MERN Stack, Frontend, Backend, HTML, CSS, JavaScript, Colombia, 21 years old, Web development experience">
+        <meta name="author" content="Leiner Hoyos">
+        <meta property="og:title" content="Leiner Hoyos - Fullstack Web Developer">
+        <meta property="og:description" content="Hello! I'm Leiner Hoyos, a passionate fullstack web developer from Colombia, aged 21, with 3 years of experience in web development. Specialized in the MERN stack and proficient in both frontend and backend.">
+        <meta property="og:image" content="https://leinerhoyos-en.netlify.app/porfolio.png" />
+        <meta property="og:url" content="https://leinerhoyos-en.netlify.app">
+        <link rel="icon" type="image/png" href="/icon.png" />
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <meta name="generator" content={Astro.generator} />
+        </script>
+        <title>Leiner Hoyos - Fullstack Web Developer</title>
+      </head>
+<body>
+    <main class="container mx-auto h-screen pl-0 pr-0">
+        <section class="flex flex-col gap-4 items-center justify-center h-screen">
+            <a href="/" class="flex gap-3 z-[-1] text-[64px]">
+                <span class="text-[1em] text-secondary font-Poppins">{"{"}</span>
+                <div class="flex flex-col items-center justify-center">
+                  <h2
+                    class="whitespace-nowrap text-[0.5em] font-Oswal font-bold tracking-wider"
+                  >
+                    LHDEV
+                  </h2>
+                  <span class="text-secondary text-[0.25em] font-Poppins font-light"
+                    >Web developer</span>
+                </div>
+                <span class="text-[1em] text-secondary font-Poppins">{"}"}</span>
+              </a>
+              <article class=" flex flex-col items-center justify-center gap-2">
+                <h1 class="text-3xl font-semibold text-secondary">
+                    Page Not Found
+                </h1>
+                <p class="text-base font-Poppins">Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</p>
+                <a href="/" class={`${className} text-base`}>Back to our site</a>
+              </article>
+        </section>
+    </main>
+
+    <script is:inline>
+        const getThemePreference = () => {
+          if (
+            typeof localStorage !== "undefined" &&
+            localStorage.getItem("theme")
+          ) {
+            return localStorage.getItem("theme");
+          }
+          return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        };
+        const isDark = getThemePreference() === "dark";
+        document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+  
+        if (typeof localStorage !== "undefined") {
+          const observer = new MutationObserver(() => {
+            const isDark = document.documentElement.classList.contains("dark");
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+          });
+          observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ["class"],
+          });
+        }
+      </script>
+</body>
+</html>
